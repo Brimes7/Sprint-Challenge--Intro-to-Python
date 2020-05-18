@@ -23,14 +23,18 @@ humans = [
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with 'D':
+
+#Why wont .lower() work with this one?
+# i = to the for loop name||human
 print("Starts with D:")
-a = []
+a = [i.name for i in humans if i.name.startswith("D")]
 print(a)
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name ends in "e".
+#i is banana word for loop
 print("Ends with e:")
-b = []
+b = [i.name for i in humans if i.name.endswith("e")]
 print(b)
 
 # Write a list comprehension that creates a list of names of everyone
